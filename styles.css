@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif
+}
+body{
+    background: #efefef;
+}
+
+nav{
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1872f2;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    width: 160px;
+    margin-right: 45px;
+}
+
+.left-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.left-nav ul li img{
+    width: 28px;
+    margin: 0 15px;
+   
+}
+
+.right-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-user-icon img{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right-nav .searchbox{
+    display: flex;
+    background: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+.right-nav .searchbox input{
+    border: none;
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    font-size: 17px;
+    color: gray
+}
+.searchbox img{
+    width: 14px;
+}
+
+.online{
+    position: relative;
+}
+
+.online::after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    position: absolute;
+    border-radius: 50%;
+    background: #41db51;
+    top: 0;
+    right: 0;
+ 
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+.left-sidebar{
+    /* background: #cbdffa; */
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    
+}
+.right-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    color: #626262;
+    height: fit-content;
+}
+
+.main-content{
+    align-self: center;
+    flex-basis: 45%;
+}
+
+.imp-links a, .shortcut-link a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: fit-content;
+    color: #626262;
+}
+.imp-links a img{
+    width: 30px;
+    margin-right:15px;
+}
+.imp-links a:last-child{
+    color: #1876f2;
+}
+
+.imp-links{
+    border-bottom: 1px solid #ccc;
+}
+.shortcut-link a img{
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.shortcut-link p {
+    margin: 25px 0;
+    font-weight: 500;
+    color: #626262;
+}
+
+.sidebar-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    margin-top: 5px;
+}
+
+.sidebar-title h4{
+    font-weight: 600;
+    font-size: 18px;
+}
+.sidebar-title a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #1876f2
+}
+
+.event{
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.left-event {
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    over-flow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.right-event a {
+    text-decoration: none;
+    color: #626262;
+    line-height: 4px;
+}
+.event .right-event p {
+    color: gray;
+}
+.fa-sharp{
+    color: red
+}
+.event .right-event a{
+    color: #6262f2;
+}
+.event p {
+    font-size: 12px;
+    text-decoration: none;
+    color: #1876f2;
+}
+
+.left-event span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1876f2;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 0;
+}
+
+.sidebar-ads{
+    width: 100%;
+    border-bottom: 20px;
+    border-radius: 4px;
+    /* height: auto; */
+}
+.online-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.online-list .online img{
+    width: 40px;
+    border-radius: 50%;
+    
+}
+.online-list .online{
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.online-list .online::after{
+    top: unset;
+    bottom: 5px;
+
+}
+
+
+/* Media Queries */
+
+@media (max-width: 740px) {
+    .right-nav{
+        display: none;
+    }
+}
